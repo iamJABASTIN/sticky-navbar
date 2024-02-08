@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.nav{
+    background-color: #222;
+    padding:20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav a{
+    padding: 7px 15px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+}
+
+.nav.active {
+    padding: 10px 0px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active a{
+    color: #222;
+}
+
+.nav a:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+
+.hero {
+  height: 100vh;
+  background-image: url(./image/wp5433782-kakashi-supreme-anime-wallpapers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+}
+
+.hero-sub {
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.hero-heading {
+  background-image: url(./image/Kakashi\ desktop\ wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  font-size: 9rem;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(to right,rgb(30, 144, 255,0.3), transparent); */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.content > h2 {
+  margin: 30px 0;
+}
+
+.content > p {
+  letter-spacing: 1.3px;
+  line-height: 30px;
+}
+
